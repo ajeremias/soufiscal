@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @public_place.nome %>
+</p>
+
+<p>
+  <strong>Neighborhood:</strong>
+  <%= @public_place.neighborhood %>
+</p>
+
+<%= link_to 'Edit', edit_public_place_path(@public_place) %> |
+<%= link_to 'Back', public_places_path %>

@@ -1,0 +1,27 @@
+<%= form_with(model: public_place, local: true) do |form| %>
+  <% if public_place.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(public_place.errors.count, "error") %> prohibited this public_place from being saved:</h2>
+
+      <ul>
+      <% public_place.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, id: :public_place_nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :neighborhood_id %>
+    <%= form.text_field :neighborhood_id, id: :public_place_neighborhood_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

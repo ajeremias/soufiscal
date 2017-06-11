@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @complaint_address.nome %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @complaint_address.state %>
+</p>
+
+<%= link_to 'Edit', edit_complaint_address_path(@complaint_address) %> |
+<%= link_to 'Back', complaint_addresses_path %>

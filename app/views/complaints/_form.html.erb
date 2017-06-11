@@ -1,0 +1,72 @@
+<%= form_with(model: complaint, local: true) do |form| %>
+  <% if complaint.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(complaint.errors.count, "error") %> prohibited this complaint from being saved:</h2>
+
+      <ul>
+      <% complaint.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, id: :complaint_nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :detalhe %>
+    <%= form.text_area :detalhe, id: :complaint_detalhe %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor_inicial_estimado %>
+    <%= form.text_field :valor_inicial_estimado, id: :complaint_valor_inicial_estimado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_reclamacao %>
+    <%= form.date_select :data_reclamacao, id: :complaint_data_reclamacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_inicio_obra %>
+    <%= form.date_select :data_inicio_obra, id: :complaint_data_inicio_obra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_fim_obra %>
+    <%= form.date_select :data_fim_obra, id: :complaint_data_fim_obra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numero_contrato %>
+    <%= form.text_field :numero_contrato, id: :complaint_numero_contrato %>
+  </div>
+
+  <div class="field">
+    <%= form.label :geolocalizacao %>
+    <%= form.text_field :geolocalizacao, id: :complaint_geolocalizacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :anonimo %>
+    <%= form.check_box :anonimo, id: :complaint_anonimo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status, id: :complaint_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :complaint_user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

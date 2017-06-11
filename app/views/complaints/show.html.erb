@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @complaint.nome %>
+</p>
+
+<p>
+  <strong>Detalhe:</strong>
+  <%= @complaint.detalhe %>
+</p>
+
+<p>
+  <strong>Valor inicial estimado:</strong>
+  <%= @complaint.valor_inicial_estimado %>
+</p>
+
+<p>
+  <strong>Data reclamacao:</strong>
+  <%= @complaint.data_reclamacao %>
+</p>
+
+<p>
+  <strong>Data inicio obra:</strong>
+  <%= @complaint.data_inicio_obra %>
+</p>
+
+<p>
+  <strong>Data fim obra:</strong>
+  <%= @complaint.data_fim_obra %>
+</p>
+
+<p>
+  <strong>Numero contrato:</strong>
+  <%= @complaint.numero_contrato %>
+</p>
+
+<p>
+  <strong>Geolocalizacao:</strong>
+  <%= @complaint.geolocalizacao %>
+</p>
+
+<p>
+  <strong>Anonimo:</strong>
+  <%= @complaint.anonimo %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @complaint.status %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @complaint.user %>
+</p>
+
+<%= link_to 'Edit', edit_complaint_path(@complaint) %> |
+<%= link_to 'Back', complaints_path %>

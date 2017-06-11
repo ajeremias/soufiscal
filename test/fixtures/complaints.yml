@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  detalhe: MyText
+  valor_inicial_estimado: 1.5
+  data_reclamacao: 2017-06-11
+  data_inicio_obra: 2017-06-11
+  data_fim_obra: 2017-06-11
+  numero_contrato: MyString
+  geolocalizacao: MyString
+  anonimo: false
+  status: MyString
+  user: one
+
+two:
+  nome: MyString
+  detalhe: MyText
+  valor_inicial_estimado: 1.5
+  data_reclamacao: 2017-06-11
+  data_inicio_obra: 2017-06-11
+  data_fim_obra: 2017-06-11
+  numero_contrato: MyString
+  geolocalizacao: MyString
+  anonimo: false
+  status: MyString
+  user: two
