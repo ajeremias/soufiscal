@@ -1,24 +1,21 @@
-# README
+# SouFiscal
+Permitir que o cidadão possa de maneira simples, reclamar e monitorar irregularidades em obras públicas, auxiliando os orgãos fiscalizadores no combate a corrupção nestas obras.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Instalação local
+Clone o SouFiscal do nosso repositório e execute os seguintes comandos:
 
-Things you may want to cover:
+```bash
+$ cd ~/soufiscal
+$ bundle install
+$ rails db:migrate
+```
+Após a execução dessas instruções, a aplicação irá estar rodando na seguinte url: http://localhost:3000/
 
-* Ruby version
+## Colaboradores
+* Antônio Jeremias
+* Carlos Henrique
+* Djones Santos
+* Francisco Porfírio
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Licença
+Este projeto está disponível como um projeto de código aberto de acordo com os termos da [GNU GENERAL PUBLIC LICENSE](https://github.com/ajeremias/soufiscal/blob/master/LICENSE)
