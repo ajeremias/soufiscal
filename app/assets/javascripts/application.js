@@ -13,3 +13,5 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+//= require startbootstrap-new-age-gh-pages/js/new-age.min

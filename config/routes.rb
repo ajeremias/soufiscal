@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   resources :complaints
   resources :users
   resources :user_types
+
+  root to: "landing_page#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

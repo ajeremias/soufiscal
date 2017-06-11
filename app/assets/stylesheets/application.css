@@ -13,3 +13,5 @@
  *= require_tree .
  *= require_self
  */
+
+*=require startbootstrap-new-age-gh-pages/css/new-age.min
